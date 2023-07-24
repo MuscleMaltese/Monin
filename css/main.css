@@ -1,0 +1,459 @@
+*{margin:0; padding:0;}
+li {list-style: none;}
+a {text-decoration: none; color:#212121; display: block;}
+div, header, section, footer, nav, ul, li, a {box-sizing: border-box;}
+img {width: 100%;}
+
+/* -------------------------------------- 헤더 -------------------------------------- */
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    background-color: #2F251D;
+    height: 110px;
+    position: relative;
+}
+
+/* -------------- 로고 -------------- */
+.logo {
+    margin: 20px auto;
+    margin-right: 0;
+}
+
+/* -------------- 네비게이션 -------------- */
+nav{
+    width: 900px; 
+    margin: 37px auto;
+    margin-left: 35px;
+    z-index: 2;
+}
+
+nav > ul > li {
+    float:left;
+}
+
+nav > ul > li > a {
+    padding:10px 40px 20px; 
+    font-size: 18px;
+    color:#fef0cb;
+}
+
+nav > ul > li > a:hover {
+    color:#fff;
+}
+
+/* --- 네비게이션 서브메뉴 --- */
+nav .sub {
+    /* opacity: 0;
+    overflow: hidden;
+    transition: all 0.9s; 
+    max-height: 0px; */
+    display: none;
+    background-color: #d8b997;
+}
+
+nav .sub li a {
+    padding: 15px 5px 15px 16px;
+    font-size: 14px;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 1px solid #c7aa8b;
+}
+
+nav .sub li a:hover {
+    color: #fff;
+}
+
+/* --- 주메뉴에 마우스 오버했을때 서브메뉴 나타남 --- */
+nav > ul > li:hover .sub {
+    /* opacity: 1;
+    max-height: 500px; */
+    display: block;
+}
+
+/* -------------------------------------- 섹션 -------------------------------------- */
+.section {
+    position: relative;
+}
+
+/* -------------- main1 --------------*/
+.main1 {
+    width: 100%;
+    height: 100vh;
+}
+
+.main1 .swiper {
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+
+/* --- 페이지네이션 위치 --- */
+.main1 .swiper1 .swiper-pagination {
+    top: 94%;
+}
+
+/* --- 페이지네이션 모양 --- */
+.main1 .swiper1 .swiper-pagination-bullet {
+    width: 40px;
+    height:6px;
+    border-radius: 0;
+    background-color: #d2ad80;
+}
+
+/* --- main1 슬라이드 이미지 --- */
+.main1 .swiper .s1 {background: url(../img/mainSlide1_PRODUCTS.jpg) no-repeat;}
+
+.main1 .swiper .s2 {background: url(../img/mainSlide2_CATALOG.jpg) no-repeat;}
+
+.main1 .swiper .s3 {background: url(../img/mainSlide3_RECIPES.jpg) no-repeat;}
+
+.main1 .swiper .s4 {background: url(../img/mainSlide4_COMPANY.jpg) no-repeat;}
+
+.main1 .swiper .s5 {background: url(../img/mainSlide5_MISSION_VALUE.jpg) no-repeat;}
+
+.main1 .swiper .s6 {background: url(../img/mainSlide6_HISTORY_OF_MONIN.jpg) no-repeat;}
+
+/* --- main1 가운데 상자 --- */
+.main1 .main1Box {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.main1 .main1InnerBox {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.main1 .main1InnerBox a {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 10px;
+    background: url(../img/white_bg.png);
+}
+
+.main1 .main1InnerBox a span {
+    display: inline-block;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 13px 36px;
+    color: #5a2e16;
+    border: 2px solid #5a2e16;
+    border-radius: 10px;
+}
+
+.main1 .main1InnerBox a span:hover {
+    background-color: #c3a66e;
+}
+
+/* -------------- main2 -------------- */
+.main2 {
+    width: 100%;
+    height: 50vh;
+}
+
+/* --- 제품 소개 --- */
+.main2 .main2Par {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.main2 .main2Letter {
+    font-size: 2rem;
+    color: #5a2e16;
+    background: url(../img/longSlash.png) no-repeat 50% 50%;
+    background-size: 1300px 20px;
+    margin-bottom: 10px;
+}
+
+.main2 .main2Letter span {
+    background: #fff;
+    padding: 0 14px;
+}
+
+/* --- 제품 소개 및 글자 --- */
+.main2 .main2Par .main2Exp {
+    letter-spacing: -1px;
+    font-size: 18px;
+}
+
+/* --- main2 슬라이드--- */
+.main2 .swiper {
+    width: 75%;
+    height: 50vh;
+    margin-top: 70px;
+}
+
+.main2 .swiper .swiper-slide {
+    height: 246px;
+}
+
+/* --- main2 슬라이드 버튼--- */
+.main2 .main2SBtn {
+    color: #2F251D;
+}
+
+/* --- main2 슬라이드 텍스트--- */
+.main2 .main2_SlideExp {
+    text-align: center;
+}
+
+.main2 .main2_SlideExp .eng {
+    color: #949494;
+}
+
+
+/* -------------- main3 -------------- */
+.main3 {
+    width: 100%;
+    height: 63vh;
+    margin: 205px 0 30px 0;
+}
+
+.main3 .main3_bg {
+    width: 100%;
+    height: 100%;
+    background: url(../img/studio_bg.jpg) no-repeat 50% 100%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --- main3 글 박스 --- */
+.main3 .main3_slide {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    top: -1%;
+}
+
+.main3 .main3Box {
+    width: 298px;
+    height: 298px;
+    background-color: #352B22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main3 .main3InnerBox {
+    text-align: center;
+    color: #fff;
+    letter-spacing: -1.5px;
+}
+
+.main3 .bar {
+    width: 40px;
+    height: 10px;
+    margin: 12px auto;
+
+
+    border-bottom: 2px solid #fff;
+}
+
+.main3 .main3Exp {
+    line-height: 30px;
+}
+
+.main3 .main3Btn {
+    color: #fff;
+    padding: 8px 60px;
+    background-color: transparent;
+    border: solid 1px #fff;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* --- main3 슬라이드--- */
+.main3 .swiper_box {
+    width: 50%;
+}
+
+.main3 .swiper {
+    position: relative;
+    margin-top: 4px;
+    left: 1.5%;
+    width: 100%;
+    /* overflow: visible; */
+}
+
+.main3 .swiper .swiper-slide {
+    text-align:center;
+	display:flex; /* 내용을 중앙정렬 하기위해 flex 사용 */
+	align-items:center; /* 위아래 기준 중앙정렬 */
+	justify-content:center
+}
+
+.main3 .swiper .swiper-slide .main3Img {
+    margin: 0 10px;
+    position: relative;
+    left: -3px;
+}
+
+/* --- main3 슬라이드 좌우 버튼--- */
+.main3 .main3SBtn {
+    color: #2F251D;
+}
+
+/* --- 페이지네이션 모양 --- */
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom, .swiper-pagenation-fraction {
+    left:50%;
+    transform: translateX(-50%);
+    top:115%;
+    bottom:-10%;
+}
+
+.main3 .main3_slide .swiper_box .swiper-pagination-bullet {
+    width: 40px;
+    height:6px;
+    border-radius: 0;
+    background-color: #FFF8EC;
+    opacity: 1;
+}
+
+.main3 .main3_slide .swiper_box .swiper-pagination-bullet-active {
+    background-color: #2F251D;
+}
+
+.main3 .underB {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.main3 .underB img {
+    width: 1300px;
+    height: 20px;
+    margin: 30px 0;
+}
+
+/* -------------- main4 -------------- */
+.main4 {
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.main4 .main4Pic {
+    width: 70%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.main4 .main4Pic .main4Pic1 {
+    width: 100%;
+    height: 500px;
+    background-color: #5a2e16;
+    background: url(../img/banner_01.jpg) no-repeat 50% 50%;
+}
+
+.main4 .main4Pic .main4Pic2 {
+    width: 100%;
+    height: 500px;
+    background: url(../img/banner_02.jpg) no-repeat 50% 50%;
+}
+
+/* --- main4 가운데 상자 --- */
+.main4 .main4Box {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.main4 .main4InnerBox {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.main4 .main4InnerBox a {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 10px;
+    background: url(../img/white_bg.png);
+}
+
+.main4 .main4InnerBox a span {
+    display: inline-block;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 13px 36px;
+    color: #5a2e16;
+    border: 2px solid #5a2e16;
+    border-radius: 10px;
+}
+
+.main4 .main4InnerBox a span:hover {
+    background-color: #c3a66e;
+}
+
+/* -------------------------------------- 푸터 -------------------------------------- */
+footer {
+    width: 100%;
+    height: 20vh;
+    background-color: #FDF5EC;
+}
+
+.footerAll {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    position: relative;
+    top: 38%;
+}
+
+.footerLogo {
+    width: 155px;
+    position: relative;
+    left: 1%;
+}
+
+.footerPolicy {
+    position: relative;
+    right: 10%;
+}
+
+.footerPolicy ul li {
+    float: left;
+    letter-spacing: -1px;
+    line-height: 2px;
+}
+
+.footerPolicy span {
+    letter-spacing: -1px;
+    font-size: 12px;
+    color: #A48771;
+    line-height: 13px;
+}
+
+.footericon ul {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.footericon img {
+    width: 43px;
+    height: 43px;
+    margin: 0 13px;
+    position: relative;
+    right: 21%;
+}
+
+.linkPage {
+    color: #E01890;
+}

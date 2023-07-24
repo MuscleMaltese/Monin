@@ -1,0 +1,183 @@
+*{margin:0; padding:0;}
+li {list-style: none;}
+a {text-decoration: none; color:#212121; display: block;}
+div, header, section, footer, nav, ul, li, a {box-sizing: border-box;}
+img {width: 100%;}
+
+header {
+    position: fixed;
+    width: 100%;
+}
+
+/* -------------------------------------- 섹션 -------------------------------------- */
+/* -------------- sub1 --------------*/
+
+/* --- sub1 글자 --- */
+.sub1 .sub1_letter {
+    width: 100%;
+    height: 305px;
+    text-align: center;
+    padding-top: 155px;
+    font-size: 48px;
+    font-weight: 500;
+}
+
+/* --- sub1 버튼 --- */
+.sub1 .sub1_udBtn {
+    width: 50%;
+    height: 100px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub1 .sub1_udBtn button {
+    width: 290px;
+    height: 62px;
+    color: #875a35;
+    letter-spacing: -1px;
+    border-radius: 10px;
+    border: 1px solid #875a35 ;
+    background-color: transparent;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* --- sub1 바 --- */
+.sub1 .sub1_bar {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #EAE9E8;
+    border-bottom: 1px solid #EAE9E8;
+}
+
+.sub1 .sub1_bar ul {
+    display: flex;
+    flex-flow: nowrap;
+}
+
+.sub1 .sub1_bar ul .link_letter a {
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    color: #CBCBCB;
+    margin: 0 25px;
+}
+
+.sub1 .sub1_bar ul .link_letter a:hover {
+    color: #2f251d;
+}
+
+.sub1 .sub1_bar ul .link_letter .first {
+    color: #5a2e16;
+}
+
+.sub1 .sub1_bar ul .sl {
+    color: #C1A471;
+}
+
+/* -------------- sub1 --------------*/
+/* --- sub2 크기 --- */
+.sub2 {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+/* --- sub2 글자 --- */
+.sub2 .sub2_letter {
+    color: #5A2E16;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: -4px;
+    font-size: 30px;
+    line-height: 45px;
+}
+
+/* --- sub2 이미지 아래 글자 전체 박스 --- */
+.sub2 .sub2_letterBox {
+    height: 280px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+
+/* --- sub2 이미지 아래 글자 박스1,2 크기 --- */
+.sub2 .box1,
+.sub2 .box2 {
+    width: 640px;
+}
+
+/* --- sub2 이미지 아래 글자 박스1,2 제목 --- */
+.sub2 .box1 h3,
+.sub2 .box2 h3 {
+    margin: 60px 0 25px 0;
+    font-size: 25px;
+    letter-spacing: -2px;
+    color: #5B3E27;
+}
+
+/* --- sub2 이미지 아래 글자 박스1,2 설명글 --- */
+.sub2 .box1 .box1_letter,
+.sub2 .box2 .box2_letter {
+    font-size: 17.5px;
+    line-height: 32px;
+    letter-spacing: -1px;
+}
+
+/* --- 사선 막대 영역 --- */
+.sub2 .sub2_bar {
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+.sub2 .sub2_bar .barLetter {
+    font-size: 32px;
+    font-weight: 500;
+    color: #000000;
+    background: url(../img/longSlash.png) no-repeat 50% 50%;
+    background-size: 1300px 20px;
+    margin-bottom: 10px;
+}
+
+.sub2 .sub2_bar .barLetter span {
+    background: #fff;
+    padding: 0 14px;
+}
+
+/* -------------- sub3 --------------*/
+.sub3 {
+    height: 640px;
+    width: 1280px;
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0 auto;
+}
+
+.sub3 .sub3_map {
+    text-align: center;
+}
+
+.sub3 .sub3_map iframe {
+    width: 640px;
+    height: 500px;
+    border: none;
+}
+
+.sub3 .sub3_letter {
+    width: 640px;
+    margin-left: 30px;
+    font-size: 20px;
+    letter-spacing: -1px;
+}
+
+.sub3 .sub3_letter h3 {
+    color: #5A2E16;
+}
